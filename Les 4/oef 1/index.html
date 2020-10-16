@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Oef 1 - Forms</title>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1>Web en mobile event.</h1>
+        </header>
+
+        <p>Schrijf je in!</p>
+
+        <h2>Formulier</h2>
+        <form method="POST">
+            <label for="fname">Naam:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Familienaam:</label>
+            <input type="text" name="lname" id="lname"><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Man</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Vrouw</label><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="gebdatum">Geboortedatum:</label>
+            <input type="date" name="gebdatum" id="gebdatum"><br>
+            <label for="phone">Telefoonnr:</label>
+            <input type="text" name="phone" id="phone"><br>
+
+            <label for="morning">Ochtendsessie:</label>
+            <select name="morning" id="morning" required>
+                <option value="">Selecteer een item</option>
+                <option value="product">product</option>
+                <option value="service">service</option>
+            </select><br>
+            <label for="morning">Ochtendsessie:</label>
+            <select name="morning" id="morning" required>
+                <option value="">Selecteer een item</option>
+                <option value="product">product</option>
+                <option value="service">service</option>
+            </select><br>
+            <label for="lunch">Ik blijf 's middags eten.</label>
+            <input type="checkbox" id="lunch" name="lunch" value="ja"><br>
+            <label for="content">Boodschap:</label><br>
+            <textarea name="content" id="content" cols="30" rows="10" required></textarea><br>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Send">
+
+        </form>
+
+    </main>
+</body>
+
+</html>

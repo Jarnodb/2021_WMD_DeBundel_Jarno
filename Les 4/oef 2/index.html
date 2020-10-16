@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Oef 3 - Media</title>
+</head>
+
+<body>
+    <main>
+
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Login:</legend>
+                <label for="user">Username:</label><br>
+                <input type="text" id="user" name="user"><br>
+                <label for="Pass">Passord:</label><br>
+                <input type="password" id="Pass" name="Pass">
+            </fieldset>
+            <fieldset>
+                <legend>No Account? Create one!</legend>
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname"><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Man</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Vrouw</label><br>
+                <label for="color">Favourite color:</label>
+                <input type="color" id="color" name="color"><br>
+                <label for="education">Eductation:</label>
+                <select name="education" id="education" required>
+                    <option value="">Select...</option>
+                    <option value="product">None</option>
+                    <option value="service">Highschool</option>
+                    <option value="service">University</option>
+                </select><br>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <input type="checkbox" id="skill1" name="skill1" value="HTML">
+                    <label for="skill1">HTML</label><br>
+                    <input type="checkbox" id="skill2" name="skill2" value="Javascript">
+                    <label for="skill2">Javascript</label><br>
+                    <input type="checkbox" id="skill3" name="skill3" value="CSS">
+                    <label for="skill3">CSS</label><br>
+                    <input type="checkbox" id="skill4" name="skill4" value="PHP">
+                    <label for="skill4">PHP</label><br>
+                </fieldset>
+                <label for="myfile">Upload picture:</label>
+                <input type="file" id="myfile" name="myfile" accept="image/x-png,image/gif,image/jpeg"><br>
+                <label for="content">Comment:</label><br>
+                <textarea name="content" id="content" cols="50" rows="8" required></textarea><br>
+                <input type="reset" value="Cancel">
+                <input type="submit" value="Send">
+            </fieldset>
+        </form>
+
+
+    </main>
+</body>
+
+</html>
