@@ -40,16 +40,29 @@ ul {
 li {
   background-color: white;
   padding: 1em;
-  display: block;
+  display: inline-block;
   margin: 1em;
+  width: 10%;
+}
+
+#yellow li:first-child{
+  width: 30%;
+}
+
+#red ul{
+  transform: rotate(180deg);
+}
+#red ul > li{
+  transform: rotate(-180deg);
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "Green  Green  Green  Green"
-    "Yellow Orange Orange Red"
-    "Yellow Blue   Blue   Red";
+    "Yellow Yellow Yellow Yellow"
+    "Blue  Orange Orange Orange"
+    "Blue Red   Red   Red"
+    "Blue Green Green Green";
 }

@@ -40,16 +40,17 @@ ul {
 li {
   background-color: white;
   padding: 1em;
-  display: block;
+  display: inline-flex;
   margin: 1em;
+  width: 20%;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .5fr 1fr .5fr;
   grid-template-areas:
-    "Green  Green  Green  Green"
-    "Yellow Orange Orange Red"
-    "Yellow Blue   Blue   Red";
+    "Green  Green  Green"
+    "Yellow Red    Blue"
+    "Orange Orange Blue";
 }
