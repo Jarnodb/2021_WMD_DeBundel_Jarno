@@ -1,0 +1,64 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+#red {
+  background-color: #bd392f;
+  grid-area: red;
+}
+#red2 {
+  background-color: #bd392f;
+  grid-area: red2;
+}
+#red3 {
+  background-color: #bd392f;
+  grid-area: red3;
+}
+
+#blue {
+  background-color: #3140c7;
+  grid-area: blue;
+}
+#blue2 {
+  background-color: #3140c7;
+  grid-area: blue2;
+}
+#blue3 {
+  background-color: #3140c7;
+  grid-area: blue3;
+}
+
+
+#yellow {
+  background-color: #e6d118;
+  grid-area: yellow;
+}
+
+ul { 
+  padding: 0; 
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: inline-flex;
+  margin: 1em;
+  width: 20%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "red blue blue"
+    "red2 blue2 blue2"
+    "red3 blue3 blue3"
+    "yellow yellow yellow";
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Oef 1 - Hover effects</title>
+
+  <style>
+    .flexer {
+      display: flex;
+      padding: 25px;
+    }
+
+    img {
+      margin: 25px;
+    }
+
+    .img1 img {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+
+    .img1:hover img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    .img2:hover img {
+      box-shadow:
+        1px 1px #373737,
+        2px 2px #373737,
+        3px 3px #373737,
+        4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737;
+      -webkit-transform: translateX(-3px);
+      transform: translateX(-3px);
+      transition: .5s ease;
+    }
+
+    .img3:hover img {
+      transform: rotate(2deg);
+      box-shadow: 5px 5px 2px rgb(59, 59, 59);
+      transition: .3s;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <main>
+
+    <section>
+      <h1>Images</h1>
+      <div class="flexer">
+        <div class="img1">
+          <img src="kekw.jpg" height="200px">
+        </div>
+        <div class="img2">
+          <img src="kekw.jpg" height="200px">
+        </div>
+      
+      <div class="img3">
+        <img src="kekw.jpg" height="200px">
+      </div>
+      <div class="img4">
+        <img src="kekw.jpg" height="200px">
+      </div>
+      <div class="img5">
+        <img src="kekw.jpg" height="200px">
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+    </section>
+
+  </main>
+</body>
+
+</html>

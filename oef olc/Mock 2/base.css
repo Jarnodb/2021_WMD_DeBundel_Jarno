@@ -1,0 +1,47 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+#purple {
+  background-color: #b12fbd;
+  grid-area: purple;
+}
+#red {
+  background-color: #bd2f2f;
+  grid-area: red;
+}
+#green {
+  background-color: #47bd2f;
+  grid-area: green;
+}
+#orange {
+  background-color: #bd742f;
+  grid-area: orange;
+}
+
+ul { 
+  padding: 0; 
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: inline-flex;
+  margin: 1em;
+  width: 20%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "purple purple purple"
+    "red green orange";
+}
