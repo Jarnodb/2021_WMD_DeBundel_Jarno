@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Kaartjes</title>
+</head>
+
+<body>
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+
+      console.clear();
+
+      var player1;
+      var player2;
+      var player1points = 0;
+      var player2points = 0;
+      var keuze;
+
+      var cards = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0];
+      //console.log(cards)
+      shuffleArray(cards)
+      //console.log(cards)
+
+      player1 = prompt("Wat is de naam van Speler 1?");
+      player2 = prompt("Wat is de naam van Speler 2?");
+
+      while (cards.length != 1) {
+        keuze = prompt(player1 + ", Wil je de eerste of laatste kaart?");
+        if (keuze === "eerste" || keuze === "laaste") {
+          if (cards[0] === 1 || cards[cards.length - 1] === 1) {
+            console.log(player1 + " trok de rode kaart! VERLOREN\n" + player2 + " wint met " + player2points +
+              " punten.");
+            break;
+          } else if (keuze === "eerste") {
+            cards.shift();
+            console.log("cards na shift: " + cards);
+            player1points++;
+            console.log(player1 + " punten: " + player1points);
+          } else if (keuze === "laatste") {
+            cards.pop();
+            console.log("cards na pop: " + cards);
+            player1points++;
+            console.log(player1 + " punten: " + player1points);
+          }
+        }
+
+        keuze = prompt(player2 + ", Wil je de eerste of laatste kaart?");
+        if (keuze === "eerste" || keuze === "laaste") {
+          if (cards[0] === 1 || cards[cards.length - 1] === 1) {
+            console.log(player2 + " trok de rode kaart! VERLOREN\n" + player1 + " wint met " + player1points +
+              " punten.");
+            break;
+          } else if (keuze === "eerste") {
+            cards.shift();
+            console.log("cards na shift: " + cards);
+            player2points++;
+            console.log(player2 + " punten: " + player2points);
+          } else if (keuze === "laatste") {
+            cards.pop();
+            console.log("cards na pop: " + cards);
+            player2points++;
+            console.log(player2 + " punten: " + player2points);
+          }
+        }
+      }
+    }
+
+    function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
+    }
+  </script>
+</body>
+
+</html>
