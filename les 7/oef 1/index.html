@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Oef 1 - Hello World</title>                
+  </head>
+  <body>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+      var person = prompt("Please enter your name", "Unknown");
+      var geslacht = prompt("Please enter your gender", "TBD");
+      var gebdatum = prompt("Please enter your date of birth", "TBD");
+      if (person != null && geslacht != null && gebdatum != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "!\nYou are "+ geslacht +".\nBorn on " + gebdatum +".";
+        console.log("Hello " + person + "!\nYou are "+ geslacht +".\nBorn on " + gebdatum +".");
+      }
+      else
+      {
+        document.getElementById("demo").innerHTML = "Please enter all info!"
+      }
+    }
+    </script>
+  </body>
+</html>
