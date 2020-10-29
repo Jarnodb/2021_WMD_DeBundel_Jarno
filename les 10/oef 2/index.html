@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Oef 2 | Bootleg VLC</title>
+
+  <style>
+    body{
+      text-align: center;
+    }
+    button{
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <video id="video" onmouseover="play(this)" onmouseout="pause(this)" height="250px" width="auto" >
+    <source type="video/mp4" src="catbleb.mp4">
+    Je browser ondersteunt geen video!
+  </video>
+  <br>
+
+  <button onclick="play()">play</button>  <button onclick="pause()">pause</button>
+  <br>
+  <button onclick="minsec()">-1 sec</button>  <button onclick="plussec()">+1 sec</button>
+  <br>
+  <button onclick="reset()">reset</button>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
