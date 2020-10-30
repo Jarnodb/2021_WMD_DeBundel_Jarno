@@ -43,7 +43,15 @@
             ulElement.append(vegiLi);
             ulElement.append(dishLi);
             document.getElementById("orderinfo").append(ulElement);
-            document.getElementById("validation").innerHTML = ""
+            document.getElementById("validation").innerHTML = "";
+
+            var opened = window.open("");
+            opened.document.write("<html><head><title>Order</title></head><body><h1>Your order:</h1><br><ul>" 
+            + "<li> Name: " + fnameElLi.value +"</li>" 
+            + "<li> Lastname: " + lnameElLi.value +"</li>"
+            + "<li> Vergitarian? " + vegiElLi.value +"</li>"
+            + "<li> Dish: " + fnameElLi.value +"</li>"
+            +"</ul></body></html>");
         }
     }
 }());
