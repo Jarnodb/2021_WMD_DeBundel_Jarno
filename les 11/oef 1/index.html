@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Oef 1 | DOM</title>
+
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .badvalidation {
+      background-color: rgb(197, 92, 92);
+      color: black;
+    }
+
+    .badvalidation::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: black;
+      opacity: 1;
+      /* Firefox */
+    }
+
+    #validation {
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <img
+    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.logodesignguru.com%2Fimages%2Findustry-logos%2Fitalian-restaurant-01.png&f=1&nofb=1">
+
+
+  <p id="validation"></p>
+  <form id="orderForm" method="GET">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="first name..."><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="last name..."><br>
+    <label>vegetarian: </label>
+    <input type="radio" id="yes" name="yesno" value="Ja">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="yesno" value="Nee" checked>
+    <label for="no">No</label><br>
+    <select name="dish" id="dish" required>
+      <option value="Surprise me!">Mystery dish</option>
+      <option value="Lasagne">Lasagne</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Spaghetti">Spaghetti</option>
+    </select><br><br>
+    <button type="submit" id="orderButton" value="sumbmit">Submit</button>
+  </form>
+
+
+  <p id="orderinfo"></p>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
