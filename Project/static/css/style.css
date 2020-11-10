@@ -126,7 +126,7 @@ body {
 
 /* Start Nav css */
 nav {
-    position: sticky;
+    /*position: sticky;*/
     top: 0px;
     margin: 0px;
     overflow: hidden;
@@ -516,6 +516,11 @@ nav {
     transition: ease-in .2s;
 }
 
+#roombutton a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* End rooms css */
 
 
@@ -549,8 +554,8 @@ nav {
 .FoodText {
     grid-area: FoodText;
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     height: 350px;
     margin-left: 2%;
 }
@@ -578,8 +583,115 @@ nav {
 .FoodText2 {
     grid-area: FoodText;
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     height: 350px;
     margin-right: 2%;
+}
+
+.FoodText ul li {
+    list-style: none;
+}
+
+.FoodText2 ul li {
+    list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .food-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .food-container2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+.footer {
+    margin-top: 200px;
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-shadow: border-box;
+    background-color: #0F1626;
+}
+
+.inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner-footer .logo-container {
+    width: 25%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner-footer .logo-container img {
+    width: 225px;
+    height: auto;
+}
+
+.inner-footer .footer-third {
+    width: calc(21.666666667 - 20px);
+    margin-right: 100px;
+    float: left;
+    height: 100%;
+}
+
+.inner-footer .footer-third:last-child {
+    margin-right: 0;
+}
+
+.inner-footer .footer-third h1 {
+    font-size: 22px;
+    color: #FF533D;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.inner-footer .footer-third a {
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px; 
+}
+
+.inner-footer .footer-third li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 2px;
+    color: white;
+}
+
+.inner-footer .footer-third span {
+   color: white;
+   font-size: 16px;
+   font-weight: 200;
+   display: block;
+   width: 100%;
+   padding-top: 20px ;
+}
+
+@media(max-width: 800px){
+    .footer .inner-footer{
+        width: 90%;
+    }
+    .inner-footer .footer-third,
+    .inner-footer .logo-container{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
 }
