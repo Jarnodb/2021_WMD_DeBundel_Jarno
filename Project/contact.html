@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/roomsstyle.css">
   <link rel="stylesheet" href="static/css/booking.css">
+  <link rel="stylesheet" href="static/css/contact.css">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head>
@@ -43,63 +44,25 @@
 
   
 <section class="room-title">
-    <h1>Booking</h1>
+    <h1>Contact</h1>
 </section>
+  
 
-<div class="corona">
-    <p><i class="fa fa-info"></i> Please note - Due to COVID-19, some restaurant/bar facilities or services may not be available to guests for a period of time.</p>
-</div>
-
-
-<script src="static/js/booking.js"></script>
-
-<div class="bookform">
-    <form id="bookform" method="post">
+<div class="form-container">
+    <form>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
   
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-      <label for="email">Email Adress</label>
-      <input type="email" id="email" name="emailadress" placeholder="Your email adress..">
-
-      <label for="startdate">From</label>
-      <input type="date" id="startdate" name="startdate" > 
-
-      <label for="enddate">Untill</label>
-      <input type="date" id="enddate" name="enddate"> 
+      <label for="email">Last Name</label>
+      <input type="email" id="email" name="emailadress" placeholder="Your email..">
   
-      <label for="Room">Room</label>
-      <select id="Room" name="Room">
-        <option value="StandardRoom">Standard Room</option>
-        <option value="FamilyRoom">Family Room</option>
-        <option value="Suite">Suite</option>
-        <option value="Executive Suite">Executive Suite</option>
-      </select>
-
-      <label for="Package">Package</label>
-      <select id="Package" name="Package">
-        <option value="Standard">Standard</option>
-        <option value="Premium">Premium</option>
-      </select>
-    
-      <input type="button" id="submitFormData" onclick="SubmitFormData();" value="Submit" />
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
     </form>
   </div>
 
-  <div class="weather">
-    <a class="weatherwidget-io" href="https://forecast7.com/en/51d053d72/ghent/" data-label_1="GHENT" data-label_2="WEATHER" data-theme="original" >GHENT WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-  </div>
-
-  <div id="results">
-    <!-- All data will display here  -->
-  </div>
-
-  
 
 
   <div class="footer">
@@ -119,7 +82,7 @@
         <a href="rooms.html">Rooms</a>
         <a href="booking.html">Book</a>
         <a href="#">Temp</a>
-        <a href="contact.html">Contact</a>
+        <a href="#">Temp</a>
       </div>
 
       <div class="footer-third">

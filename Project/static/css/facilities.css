@@ -1,0 +1,93 @@
+#restaurants {
+    width: 100%;
+    margin: auto;
+    background-color: #F5F5F5;
+    margin-top: 100px;
+}
+
+.dinner-container {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "restoimg restoText";
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.restoimg {
+    grid-area: restoimg;
+    background-image: url('../images/dineing.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.restoText {
+    grid-area: restoText;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-left: 2%;
+}
+
+.dinner-container2 {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "restoText restoimg";
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.restoimg2 {
+    grid-area: restoimg;
+    background-image: url('../images/dining.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.restoimg3 {
+    grid-area: restoimg;
+    background-image: url('../images/teras.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.restoText2 {
+    grid-area: restoText;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-right: 2%;
+}
+
+.restoText ul li {
+    list-style: none;
+}
+
+.restoText2 ul li {
+    list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .food-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .food-container2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
